@@ -1,0 +1,13 @@
+<div class="container w-50 mt-5">
+  <%= link_to cocktails_path do %>
+      <i class="fas fa-undo-alt"></i> Back to list
+  <% end %>
+</div>
+
+<div class="container w-50 mt-5">
+  <h1>EXPERIMENT HERE</h1>
+  <%= simple_form_for(@cocktail) do |f| %>
+    <%= f.input :name %>
+    <%= f.submit %>
+  <% end %>   
+</div>
